@@ -10,5 +10,15 @@ Sprockets::DirectiveProcessor.class_eval do
       mod.assets.each do |path|
         context.require_asset(path)
       end
+
+      if mod.respond_to? :asset_dependencies
+        dependencies = mod.asset_dependencies
+      else
+        dependencies = [mod.method(:assets).source_location.first]
+      end
+
+      dependencies.each do |path|
+        context.depend_on(path)
+      end
     end
 end
