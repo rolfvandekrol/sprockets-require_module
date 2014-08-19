@@ -35,4 +35,6 @@ In a sprockets manifest, add a reference to this module, like this:
 //= require_module my_project/assets
 ```
 
-The module does not have to be an actual module. As long as it is a constant that has an `assets` method, it's fine. So it can be class too.
+The module does not have to be an actual module. As long as it is a constant that has an `assets` method, it's fine. So it can be class too. 
+
+The `assets` method should return an `Enumerable`.
