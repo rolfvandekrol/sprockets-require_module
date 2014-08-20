@@ -1,4 +1,7 @@
 # Sprockets Require Module
+
+[![Gem Version](https://badge.fury.io/rb/sprockets-require_module.svg)](http://badge.fury.io/rb/sprockets-require_module) [![Code Climate](https://codeclimate.com/github/rolfvandekrol/sprockets-require_module/badges/gpa.svg)](https://codeclimate.com/github/rolfvandekrol/sprockets-require_module) [![Dependency Status](https://gemnasium.com/rolfvandekrol/sprockets-require_module.svg)](https://gemnasium.com/rolfvandekrol/sprockets-require_module)
+
 Sprockets Require Module provides a sprocket directive `require_module` that allows wrapping a number of assets in a module and requiring them at once.
 
 ## Installation
